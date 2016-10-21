@@ -1,3 +1,13 @@
+p.dotted {border-style: dotted;}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+	padding: 15px;
+	 border-spacing: 5px;
+}
+    border-style: double;
+    border-width: thick;
+}
  <div class="row">
 
   <div class="col-sm-4">.col-sm-4</div>
@@ -34,3 +44,4 @@ p {
 </td>
 </tr>"width=20"
 </tr>
+
