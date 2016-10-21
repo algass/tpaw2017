@@ -16,48 +16,68 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-    </head>
-	
+		 
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+
+	<style>
+	table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+	</style>
+	 </head>
     <body>        
         <h1> </h1>
         <!-- Add your site or application content here -->
         <p> TP AW - Formulaire v2.</p>
      
 		<h2>Gallile</h2>
+		<img src="Insitut-Galilee.gif"  style="width:40px;height:40px;">
 	
 			<a href="default.asp">
 	 <img src="http://https://www-galilee.univ-paris13.fr//galilee.png/www-galilee.univ-paris13.fr" alt="ww-galilee.univ-paris13.fr" style="width:40px;height:40px;> 
 </a>
 		<script src="formulaire.js"></script>
 		<form>
-        <table border="1", width=100%>
+        <table border="1", style="width:100%">
+	<th width=1%</th>	
 <tr>
 <td width=20%> <label for="Nom" >Nom</label> </td>
-<td> <input type="text" name="Nom" id="Nom" placeholder="entrez votre nom" /></td>
+<td > <input type="text" name="Nom" id="Nom" placeholder="entrez votre nom "/></td>
 </tr>
 <tr>
 <td> <label for="Prenom" >Prenom</label> </td>
-<td> <input type="text" name="Prenom" placeholder="entrez votre Prenom"/> </td>
+<td></td>
 </tr>
 <tr>
 <td> <label for="Date de naissance"> Date de naissance</label>  </td>
-<td> <input type="text" name="Date de naissance" placeholder="JJ/MM/AAAA" /> </td>
+<td></td>
 </tr>
 <tr>
 <td> <label for="Adresse postale" > Adresse postale</label> </td>
-<td><input type="charset"name="Adresse" placeholder="Entrez votre adresse" /> </td>
+<td></td>
 </tr>
 <tr>
 <td>  <label for="Mail" > Mail</label> </td>
-<td><input type="text" name="Mail" placeholder="Entrez votre mail"/> </td>
-</tr>
-<tr>
-<td>  </td>
-<td> <input type="button" value="valider" onclick="validation();"> </td>
+<td></td>
+</tr >
+<th width=1%</th>
 
-</tr>
+
 </table>
+ <input type="button" value="valider" onclick="validation();"> 
 
 
  
@@ -78,6 +98,10 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<p>Message Modal</p>
+<p>euillez remplir tous les chambre svp.</p>
     </body>
 	</form>
 </html>
+
