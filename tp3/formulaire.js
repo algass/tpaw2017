@@ -1,4 +1,5 @@
 
+<script src="formulaire.js"></script>
 $(document).ready(function(){
 	  $("#formulaire.js").validate();
 });
