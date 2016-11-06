@@ -1,109 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        
-		<title>Master 3ir<title>
-		<title> TP3 AW#3 </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		 
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("p").click(function(){
-        $(this).hide();
-    });
-});
-</script>
-
-	<style>
-	table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-}
-
-	</style>
-	 </head>
-    <body>        
-        <h1> </h1>
-        <!-- Add your site or application content here -->
-        <p> TP AW - Formulaire v2.</p>
-     
-		<h2>Gallile</h2>
-		<img src="index.jpg"  width=40px height=40px>
-		 
-	
-			<a href="default.asp">
-	 <img src="http://https://www-galilee.univ-paris13.fr//galilee.png/www-galilee.univ-paris13.fr" alt="ww-galilee.univ-paris13.fr" style="width:40px;height:40px;> 
-</a>
-		<script src="formulaire.js"></script>
-		<form>
-        <table border="1", style="width:100%">
-	<th width=1%</th>	
-<tr>
-<td width=20%> <label for="Nom" >Nom</label> </td>
-<td > <input type="text" name="Nom" id="Nom" placeholder="entrez votre nom "/></td>
-</tr>
-<tr>
-<td> <label for="Prenom" >Prenom</label> </td>
-<td></td>
-</tr>
-<tr>
-<td> <label for="Date de naissance"> Date de naissance</label>  </td>
-<td></td>
-</tr>
-<tr>
-<td> <label for="Adresse postale" > Adresse postale</label> </td>
-<td></td>
-</tr>
-<tr>
-<td>  <label for="Mail" > Mail</label> </td>
-<td></td>
-</tr >
-<th width=1%</th>
-
-
-</table>
- <input type="button" value="valider" onclick="validation();"> 
-
-
- 
-<div class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <p>One fine body&hellip;</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">ok</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<p>Message Modal</p>
-<p>euillez remplir tous les chambre svp.</p>
-    </body>
-	</form>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap.css" />    
+    <script src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="formulaire.js"></script>
+    <title></title>
+</head>
+<body>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" >
+            </div>
+         </div>
+            <div class="form-group">
+                <label for="inputAdresse3" class="col-sm-2 control-label">Adresse</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputAdresse3" placeholder="Adresse"><input type="button" id="gps" value="GPS" onclick="getLocation();" />
+                    <div id="demo"></div>
+                </div>
+            </div>
+        <div class="form-group">
+            <label for="inputDate3" class="col-sm-2 control-label">Date de naissance</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="inputDate3" placeholder="Date de Naissance">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-default" id="submitForm">Sign in</button>
+            </div>
+        </div>
+    </form>
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Veuillez remplir tous les champs svp.&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</body>
 </html>
-
-
