@@ -15,8 +15,8 @@ if(request.status >=200&& request.status <400){
 // Success!
   var responseJSON = JSON.parse(request.responseText);
 
-  var icon =responseJSON weather.icon;
-  var temp =responseJSON weather.main;
+  var icon =responseJSON. weather.icon;
+  var temp =responseJSON. weather.main;
   var humidity = responseJSON.main.humidity;
   var cloud = responseJSON. Cloudiness;
   var wind = responseJSON.wind.speed;
