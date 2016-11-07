@@ -24,6 +24,7 @@ if(request.status >=200&& request.status <400){
   
 //VOTRE CODE JS pour afficher les données météo sur votre page
 // en mettant à jour la DIV “result”
+  document.getElementById('icon').src ="http://openweathermap.org/img/w/"+icon+".png";
   document.getElementById('result1').innerHTML =icon;
   document.getElementById('result2').innerHTML =temp;
   document.getElementById('result3').innerHTML =humidity;
