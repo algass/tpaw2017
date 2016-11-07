@@ -7,7 +7,7 @@ window.onload=function(){
 }
 function searchCity(_city){
   console.log('searchCity',Hello from'+_city);
-    function searchCity(_city){
+function searchCity(_city){
     var request =new XMLHttpRequest();
 request.open('GET',
              'http://api.openweathermap.org/data/2.5/weather?q=’+_city+’&appid=0ada432b59deb9716c357092c5f79be6',true);
