@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
         <script src="meteo.js"></script>
-        <script src="http:/getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      
         
         <title>TP5</title>
         
@@ -13,27 +13,30 @@
         
       
     </head>
-       <body>        
+       <body>  
+<div class="container">	   
         <h1>TP5</h1>
         <form id="searchCity">
         <div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">GPS</button>
-      </span>
-      <input type="text" class="form-control" placeholder="Search for...">
-         <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Recherche</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-
+		  <div class="col-lg-6  col-lg-offset-3">
+			<div class="input-group">
+			  <span class="input-group-btn">
+				<button class="btn btn-default" type="button">GPS</button>
+			  </span>
+			  <input type="text" class="form-control" placeholder="Search for...">
+				 <span class="input-group-btn">
+				<button class="btn btn-default" type="submit">Recherche</button>
+			  </span>
+			</div><!-- /input-group -->
+		  </div><!-- /.col-lg-6 -->
         </form>
                 
+				<img src="" id="icon"/>
         <div id="result1"></div>
          <div id="result2"></div>
          <div id="result3"></div>
-
+		 <div id="result4"></div>
+		 <div id="result5"></div>
+</div>
     </body>
 </html>
