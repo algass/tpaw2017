@@ -1,23 +1,134 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
-</html>
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @algass
+
+0
+0
+
+    39
+
+algass/tpaw2017 forked from bilelz/tpaw2017
+Code
+Pull requests 0
+Projects 0
+Wiki
+Pulse
+Graphs
+Settings
+tpaw2017/tp2/formulaire.html
+25bb8b1 16 minutes ago
+@algass algass Update formulaire.html
+103 lines (46 sloc) 1.45 KB
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	  <meta charset="utf-8">
+
+	  <link rel="stylesheet" href="formulaire.css">
+
+	  <script type="text/javascript" src="formulaire.js"></script>
+
+ </head>
+
+ <body>
+
+
+
+  <h1> Saisie d'une fiche "Personne" </h1>
+
+  <form name="formulaire" action="" method="POST">
+
+		  <table >
+
+		<tr>
+
+		<td> <label for="Nom" >Nom</label> </td>
+
+		<td> <input type="text" name="Nom" id="Nom" placeholder="entrez votre nom" /></td>
+
+		</tr>
+
+		<tr>
+
+		<td> <label for="Prenom" >Prenom</label> </td>
+
+		<td> <input type="text" name="Prenom" placeholder="entrez votre Prenom"/> </td>
+
+		</tr>
+
+			<tr>
+
+				<td> <label for="genre">Genre</label>  </td>
+
+				<td> <input type="radio" name="genre" value ="femme"/>F
+
+				 <input type="radio" name="genre" value ="homme"/>H</td>
+
+		    </tr>
+
+		
+
+		
+
+		<tr>
+
+		<td> <label for="Date de naissance"> Date de naissance</label>  </td>
+
+		<td> <input type="text" name="Date de naissance" placeholder="JJ/MM/AAAA" /> </td>
+
+		</tr>
+
+		<tr>
+
+		<td> <label for="Adresse" > Adresse</label> </td>
+
+		<td><input type="charset"name="Adresse" placeholder="Entrez votre adresse" /> </td>
+
+		</tr>
+
+		<tr>
+
+		<td>  <label for="Mail" > Mail</label> </td>
+
+		<td><input type="text" name="Mail" placeholder="Entrez votre mail"/> </td>
+
+		</tr>
+
+		<tr>
+
+		<td>  </td>
+
+		<td> <input type="button" value="valider" onclick="validation();"/> </td>
+
+
+
+		</tr>
+
+		</table>
+
+</form>
+
+<div id="error"> </div>
+
+<div id="resultat"> </div>
+
+ 
+
+</body>
+
+</html> 
+
+    Contact GitHub API Training Shop Blog About 
+
+    © 2016 GitHub, Inc. Terms Privacy Security Status Help 
+
